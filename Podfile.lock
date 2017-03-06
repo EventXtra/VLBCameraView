@@ -1,19 +1,18 @@
 PODS:
-  - CocoaLumberjack (1.6.2)
   - Kiwi (2.0.6)
   - OCMock (2.1.1)
   - VLBFoundation (1.0)
 
 DEPENDENCIES:
-  - CocoaLumberjack (= 1.6.2)
   - Kiwi (~> 2.0.6)
   - OCMock (~> 2.1.1)
   - VLBFoundation
 
 SPEC CHECKSUMS:
-  CocoaLumberjack: 0a08f3092acaab5f92c139e1186aa255a1e39446
-  Kiwi: 9fe70e93c30586b607c54ac8669c6424cc6f2737
-  OCMock: 363db8429164eaa219ea96a51f06e830ef3e7393
-  VLBFoundation: d5ddef89836c735841390706e136fbbd14a04387
+  Kiwi: ab67b6c2030d257e3ac64c9f4c3e3c4acc97f213
+  OCMock: add4220c4527115d16e40a21dab18cb6f829d476
+  VLBFoundation: af522a9bc9fc7d873a404e146de351178446ca13
 
-COCOAPODS: 0.33.1
+PODFILE CHECKSUM: 2790541e691fa99ab6ae4577e07f90ce7a49fc70
+
+COCOAPODS: 1.2.0

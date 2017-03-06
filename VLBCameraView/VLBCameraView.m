@@ -29,7 +29,6 @@
 #import <CoreImage/CoreImage.h>
 #import <AssetsLibrary/AssetsLibrary.h>
 #import "VLBMacros.h"
-#import "DDLog.h"
 
 typedef void(^VLBCaptureStillImageBlock)(CMSampleBufferRef imageDataSampleBuffer, NSError *error);
 typedef void(^VLBCameraViewInit)(VLBCameraView *cameraView);
@@ -121,7 +120,6 @@ VLBCameraViewInit const VLBCameraViewInitBlock = ^(VLBCameraView *cameraView){
             [library writeImageDataToSavedPhotosAlbum:imageData
                                              metadata:info
                                       completionBlock:^(NSURL *assetURL, NSError *error) {
-                                          DDLogError(@"%@", error);
                                       }];
         }
         
@@ -190,7 +188,6 @@ VLBCameraViewInit const VLBCameraViewInitBlock = ^(VLBCameraView *cameraView){
 }
 
 -(void)cameraView:(VLBCameraView *)cameraView didErrorOnTakePicture:(NSError *)error{
-    DDLogError(@"%s %@", __PRETTY_FUNCTION__, error);
     [self.delegate cameraView:cameraView didErrorOnTakePicture:error];
 }
 
